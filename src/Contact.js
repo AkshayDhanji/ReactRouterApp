@@ -10,7 +10,7 @@ export default class Contact extends React.Component {
         }
     }
     onSubmit = (e) => {
-        fetch('/submitContact', {
+        fetch('https://akshaydhanji.github.io/MiddlewareApp/submitContact', {
             method: 'POST',           
             body: JSON.stringify({
                 name: this.state.name,
