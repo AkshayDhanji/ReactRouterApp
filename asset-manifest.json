@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/ReactRouterApp/static/css/main.d8e89e44.chunk.css",
+    "main.js": "/ReactRouterApp/static/js/main.41a039e3.chunk.js",
+    "main.js.map": "/ReactRouterApp/static/js/main.41a039e3.chunk.js.map",
+    "runtime-main.js": "/ReactRouterApp/static/js/runtime-main.a889b0ff.js",
+    "runtime-main.js.map": "/ReactRouterApp/static/js/runtime-main.a889b0ff.js.map",
+    "static/js/2.dc1e9083.chunk.js": "/ReactRouterApp/static/js/2.dc1e9083.chunk.js",
+    "static/js/2.dc1e9083.chunk.js.map": "/ReactRouterApp/static/js/2.dc1e9083.chunk.js.map",
+    "index.html": "/ReactRouterApp/index.html",
+    "precache-manifest.3f40ead51f1be802ef5f2ec26644fe0b.js": "/ReactRouterApp/precache-manifest.3f40ead51f1be802ef5f2ec26644fe0b.js",
+    "service-worker.js": "/ReactRouterApp/service-worker.js",
+    "static/css/main.d8e89e44.chunk.css.map": "/ReactRouterApp/static/css/main.d8e89e44.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a889b0ff.js",
+    "static/js/2.dc1e9083.chunk.js",
+    "static/css/main.d8e89e44.chunk.css",
+    "static/js/main.41a039e3.chunk.js"
+  ]
+}
