@@ -10,7 +10,7 @@ export default class Contact extends React.Component {
         }
     }
     onSubmit = (e) => {
-        fetch('http://localhost:3001/api/submitContact', {
+        fetch('/submitContact', {
             method: 'POST',           
             body: JSON.stringify({
                 name: this.state.name,
