@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Config from './CONFIG'
 export default class Contact extends React.Component {
     constructor(props) {
         super(props);
@@ -10,22 +10,27 @@ export default class Contact extends React.Component {
         }
     }
     onSubmit = (e) => {
-        fetch('https://akshaydhanji.github.io/MiddlewareApp/submitContact', {
-            method: 'POST',           
-            body: JSON.stringify({
-                name: this.state.name,
-                email: this.state.email
-            }),            
-            async: true            
-        })
-            .then((response) => (response.json())
-                .then(json => {
-                    if (json !== undefined) {
-                        this.setState({
-                            result : 'Contact saved successfully'
-                        })
-                    }
-                }));
+        try {
+            fetch('https://akshaydhanji.github.io/MiddlewareApp/api/submitContact', {
+                method: 'POST',
+                body: JSON.stringify({
+                    name: this.state.name,
+                    email: this.state.email
+                }),
+                async: true
+            })
+                .then((response) => (response.json())
+                    .then(json => {
+                        if (json !== undefined) {
+                            this.props.history.push('/');
+                        }
+                    }));
+                    
+        } 
+        catch (error) {
+            console.log(error);
+        }
+        
     }
 
     ontxtChange = () => {
