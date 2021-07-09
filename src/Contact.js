@@ -14,6 +14,10 @@ export default class Contact extends React.Component {
             
             fetch('https://middle-ware-app.herokuapp.com/api/submitContact', {
                 method: 'POST',
+                 headers: {
+                    "Accept": "application/json",
+                    "Content-Type": "application/json"
+                },
                 body: JSON.stringify({
                     name: this.state.name,
                     email: this.state.email
@@ -23,7 +27,10 @@ export default class Contact extends React.Component {
                 .then((response) => (response.json())
                     .then(json => {
                         if (json !== undefined) {
-                            this.props.history.push('/');
+                            //this.props.history.push('/');
+                            this.setState({
+                                result: "This is " + json.name
+                            })
                         }
                     }));
                     
